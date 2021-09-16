@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jo-clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Das neueste kompilierte und minimierte CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optionales Theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+
+    </script>
+    <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
+    <!-- Das neueste kompilierte und minimierte JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="jotaro.png">
+  </head>
+  <body style="background-color: #333;">
+
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Navigation ein-/ausblenden</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Jo-ismus</a>
+      </div>
+
+      <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Hauptseite<span class="sr-only">(aktuell)</span></a></li>
+          <li class="active"><a>Jo-ismus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weitere<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">Hauptseite</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="clickersite.html">Clicker-Spiel</a></li>
+              <li><a href=" soundboard.html">Soundboard</a></li>
+              <li><a href="deadly sins.html">Sünden</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Impressum</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menü <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Aktion</a></li>
+              <li><a href="#">Andere Aktion</a></li>
+              <li><a href="#">Irgendwas anderes</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Abgetrennter Link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<h1 style="color: #d8e2e3">S.W.F. Clicker</h1>
+<small> <a href="index.html">zurück</a> </small>
+<hr>
+</br>
+
+<div style="margin-left: 100px;">
+
+  <h2 style="color: #d8e2e3"> <var id='geld'>0</var> von 12.000.000.000 erreicht </h2>
+  <button type="button" name="button" onclick="erhöhegeld();"> <img src="Öltropfen.png" with = "250" height = "250" > </button>
+
+</div>
+
+<hr>
+<p style="Font-Size: 20px; color: #d8e2e3">Verdopple dein Geld pro click mit diesem Ölturm      <button type="button" name="button1" onclick="verdoplegpc();"> <img src="Ölturm.png" with= "50" height = "50" > <var>100</var> </button> </p>
+<hr>
+
+<script type="text/javascript" >
+
+
+var preis = 100;//der preis lol
+var geld = 0;//gesammte geld
+var gpc =1;//geld pro click
+function erhöhegeld(){
+
+geld +=gpc;
+
+if(geld >= 12000000000){alert("Herzlichen glckwunsch jobro du hast keine hobbys")}
+
+document.getElementsByTagName('var')[0].innerHTML = geld;
+
+
+}
+
+function verdoplegpc(){
+  if(geld > preis){
+    geld = geld-preis;
+    preis = preis*2;
+    gpc = gpc*2;
+
+      document.getElementsByTagName('var')[0].innerHTML = geld;
+    document.getElementsByTagName('var')[1].innerHTML = preis;
+
+
+  }else{alert("MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA")}
+
+
+}
+
+
+</script>
+  </body>
+
+</html>

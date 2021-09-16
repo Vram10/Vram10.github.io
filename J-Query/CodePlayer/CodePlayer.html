@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="jquery-3.0.min.js"></script>
+    <meta charset="utf-8">
+    <title>CodePlayer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <div id="menuleiste">
+          <div id="logo">CodePlayer</div>
+          <div id="buttonDiv">  <button id="runButton">Run</button> </div>
+
+
+            <ul id="toggles">
+              <li class="toggle selected">HTML</li>
+              <li class="toggle">CSS</li>
+              <li class="toggle">JS</li>
+              <li class="toggle selected" style="border: none">Result</li>
+            </ul>
+      </div>
+        <div class="clear"></div>
+        <div class="codeConteiner" id="HTMLContainer">
+            <div class="codelable">
+                HTML
+            </div>
+            <textarea id="htmlCode"><div id="test"></div></textarea>
+        </div>
+
+        <div class="codeConteiner" id="CSSContainer">
+            <div class="codelable">
+                CSS
+            </div>
+            <textarea id="cssCode">html {background-color: blue}</textarea>
+        </div>
+
+        <div class="codeConteiner" id="JSContainer">
+            <div class="codelable">
+               JS
+            </div>
+            <textarea id="jsCode">document.getElementById("test").innerHTML = "ja moin es workt lül"</textarea>
+        </div>
+
+        <div class="codeConteiner" id="ResultContainer">
+            <div class="codelable">
+               Result
+            </div>
+            <iframe id="resultFrame"></iframe>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

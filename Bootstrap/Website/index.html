@@ -4,11 +4,77 @@
     <meta charset="utf-8">
     <title>Jo-ismus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+
+    <!-- Das neueste kompilierte und minimierte CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optionales Theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+
+    </script>
+    <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
+    <!-- Das neueste kompilierte und minimierte JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="jotaro.png">
   </head>
   <body style="background-color: #333;">
+
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Navigation ein-/ausblenden</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Jo-ismus</a>
+      </div>
+
+      <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Hauptseite<span class="sr-only">(aktuell)</span></a></li>
+          <li class="active"><a>Jo-ismus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weitere<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/index.html">Hauptseite</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="clickersite.html">Clicker-Spiel</a></li>
+              <li><a href=" soundboard.html">Soundboard</a></li>
+              <li><a href="deadly sins.html">Sünden</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Impressum</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menü <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Aktion</a></li>
+              <li><a href="#">Andere Aktion</a></li>
+              <li><a href="#">Irgendwas anderes</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Abgetrennter Link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+
     <h1 style="color: #07db91">Der Jo-ismus</h1>
-    <small> <a href="Website.html">disklaimer</a>
-    </small>
+    <small> <a href="Website.html">disklaimer</a></small>
 
 
     <hr>
@@ -111,18 +177,8 @@
 
 
 
-
-
-
-
-
         Klicke <a href="soundboard.html">hier</a> um zum jojo soundboard zu kommen mit vielen memes
         </div>
-
-        <br><br>
-
-        <iframe width="420" height="345"  allowfullscreen src="https://www.youtube.com/embed/tUrHMPCks_A?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"></iframe>
-
 
         <br><br>
 
@@ -142,13 +198,6 @@
         <hr>
         <p>Diese seite befindet sich noch in der entwicklungs Phase! <br>
         Bei verbesserungs vorschlägen wünschen und anregungen ist hier mein kontakt: ColinGames@gmx.net </p>
-
-
-        <script type="text/javascript" src= "script.js">
-
-
-
-        </script>
 
 
 

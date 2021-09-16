@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jo-soundboard</title>
+  </head>
+  <body>
+    <h1 style="margin-left: 10px;">JoJo soundboard</h1>
+    <hr>
+
+    <audio controls>
+  <source src="konodioada" type="audio/mp3">
+
+</audio>
+<hr>
+
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>lernen und verstehen</title>
+
+    <style type="text/css">
+
+      #text1 {
+          float:left;
+          margin-right: 10px;
+
+      }
+
+      #text2 {
+          float:left;
+
+      }
+      .but{
+        float:left;
+        margin: 10px;
+        posion: relative;
+        top: 1000px;
+      }
+
+
+
+    </style>
+
+
+
+  </head>
+  <body>
+    <p id="text1">Das ist Text 1</p>
+    <p id="text2">Das ist Text 2</p>
+
+
+    <p>teste php <a href="lol.php">hier</a> </p>
+
+    <button id="button1", class="but">klick mich</button>
+    <button id="button2", class="but">klick mich auch</button>
+
+    <script type="text/javascript">
+
+      document.getElementById("button1").onclick = function(){
+        document.getElementById("text1").innerHTML = "Moiiiiiiiiiiiiiiin";
+      }
+
+      document.getElementById("button2").onclick = function(){
+        document.getElementById("text1").innerHTML = "Meisteeeeeer";
+      }
+
+    </script>
+
+  </body>
+</html>
